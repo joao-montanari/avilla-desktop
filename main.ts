@@ -6,10 +6,10 @@ function createWindow() {
         width: 800,
         height: 600,
         webPreferences: {
-            preload: path.join(__dirname, "preloader.js"),
+            preload: path.join(__dirname, "preloader.ts")
         }
     });
-    win.loadURL("http://localhost:3000");
+    win.loadURL("http://localhost:5173");
 }
 
 app.whenReady().then(() => {
