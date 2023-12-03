@@ -1,0 +1,25 @@
+@use '../../styles/variables'
+
+#gradientCard
+    display: grid
+    align-items: center
+    justify-content: center
+    width: 180px
+    margin-inline: 30px
+    cursor: pointer
+    padding-block: 20px
+    border-radius: variables.$card-border-radius
+    color: variables.$white
+    transition-duration: 0.3s
+
+    &:hover
+        box-shadow: 8px 5px 5px grey
+
+    svg
+        width: 80px
+        height: 80px
+        margin: auto
+
+    h4
+        margin-top: 20px
+        font-weight: 400
