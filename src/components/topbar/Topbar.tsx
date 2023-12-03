@@ -1,9 +1,16 @@
 import './topbar.sass';
+import { FaUser } from 'react-icons/fa';
 
-export default function Topbar() {
+function Topbar() {
     return(
         <div id='topbar'>
-            <h1>TOP BAR</h1>
+            <div id='topbarGradient' />
+            <div id='topbarContent'>
+                <h1>BOSCH</h1>
+                <FaUser/>
+            </div>
         </div>
     )
 }
+
+export default Topbar;
